@@ -88,7 +88,15 @@
     </section>
 
     <section class="sofa-statement" aria-labelledby="mehr-als">
-      <img class="statement-sofa" src="assets/sofa-variante/graphics/sofa-cutout.png" alt="Cremefarbenes Sofa mit salbeifarbenem Kissen" width="1536" height="1024">
+      <svg class="statement-sofa" viewBox="0 0 320 200" fill="none" aria-hidden="true">
+        <path class="sofa-ground" d="M6 172c34-9 72-4 108-8 38-5 74-1 110-5 32-4 62-1 90 6-16 12-48 17-92 19-46 2-96-1-142 1-32 1-56-3-74-13Z"/>
+        <g class="sofa-line">
+          <path d="M42 148v-38c0-13 11-20 19-14 6 4 9 11 9 17V78c0-12 8-19 18-19h144c10 0 18 7 18 19v35c0-6 3-13 9-17 8-6 19 1 19 14v38"/>
+          <path d="M70 117h180"/>
+          <path d="M48 141h224"/>
+          <path d="M58 149l-3 17M94 149l-2 17M228 149l2 17M264 149l3 17"/>
+        </g>
+      </svg>
       <div class="statement-copy" data-reveal><h2 id="mehr-als">Mehr als<br>vier Wände.</h2><p>Ein lebendiger Ort für Menschen, die mit und für andere wirken.</p></div>
       <img class="statement-chair" src="assets/sofa-variante/graphics/chair-line.png" alt="" width="1536" height="1024">
       <p class="statement-note">Schöner<br>arbeiten.</p>
@@ -97,30 +105,41 @@
     <section class="garden" id="garten">
       <div class="garden-copy" data-reveal><h2>Terrasse und Garten.</h2><p>Zum Ankommen, Durchatmen und Kraft tanken.</p><ul><li>Ruhige Lage mitten in Wien</li><li>Grüner Innenhof und Terrasse</li><li>Einladende Aufenthaltsbereiche</li><li>Angenehme, wertschätzende Atmosphäre</li></ul></div>
       <figure class="garden-photo" data-reveal><img src="assets/sofa-variante/images/garden-terrace.jpg" alt="Visualisierte Garten- und Terrassenstimmung mit Holztisch und grüner Bepflanzung" width="2048" height="973"></figure>
-      <img class="garden-collage" src="assets/sofa-variante/graphics/garden-collage.png" alt="" width="1152" height="1536"><p class="garden-note">Draußen<br>wirkt auch<br>innen.</p>
+      <svg class="garden-sprig" viewBox="0 0 180 210" fill="none" aria-hidden="true"><path d="M22 198c53-38 78-96 91-180M52 160c-24-6-33-27-28-49 21 4 37 23 28 49ZM75 126c-20-12-21-36-11-54 20 9 31 31 11 54ZM95 89c-14-16-8-39 7-52 17 15 20 37-7 52ZM105 132c18-15 42-10 55 5-15 18-39 22-55-5ZM116 86c15-19 39-19 55-7-11 21-34 30-55 7ZM122 44c11-18 31-22 47-13-7 20-26 30-47 13Z"/></svg>
+      <p class="garden-note">Draußen<br>wirkt auch<br>innen.</p>
     </section>
 
     <!-- TODO Preise: Die Stundensätze sind PLATZHALTER und vor der
          Veröffentlichung durch die bestätigten Beträge zu ersetzen. -->
     <section class="pricing" id="preise">
-      <div class="section-heading" data-reveal><h2>Was ein Raum kostet.</h2><p>Stundenweise buchbar – ohne Bindung, ohne versteckte Kosten.</p></div>
-      <div class="price-list">
-        <article class="price-card" data-reveal>
-          <h3>Weitraum</h3>
-          <p>Für Inspiration und Bewegung.</p>
-          <p class="price-amount"><b>22 €</b><span>pro Stunde</span></p>
-        </article>
-        <article class="price-card" data-reveal>
-          <h3>Lichtraum</h3>
-          <p>Für Begegnung und Dialog.</p>
-          <p class="price-amount"><b>18 €</b><span>pro Stunde</span></p>
-        </article>
-        <article class="price-card" data-reveal>
-          <h3>Stillraum</h3>
-          <p>Für Tiefe und innere Klarheit.</p>
-          <p class="price-amount"><b>15 €</b><span>pro Stunde</span></p>
-        </article>
+      <div class="pricing-inner">
+        <div class="pricing-intro" data-reveal>
+          <h2>Was ein Raum kostet.</h2>
+          <p>Stundenweise buchbar, ohne Bindung und ohne versteckte Kosten.</p>
+          <p class="hand-note">Fair und<br>einfach.<i></i></p>
+        </div>
+
+        <div class="price-panel">
+          <ul class="price-list">
+            <li class="price-row" data-reveal>
+              <span class="price-thumb price-shape-one"><img src="assets/sofa-variante/images/room-weitraum.jpg" alt="" width="1536" height="1024" loading="lazy"></span>
+              <span class="price-room"><b>Weitraum</b><em>Für Inspiration und Bewegung.</em></span>
+              <span class="price-tag"><b>22 €</b><em>pro Stunde</em></span>
+            </li>
+            <li class="price-row" data-reveal>
+              <span class="price-thumb price-shape-two"><img src="assets/sofa-variante/images/room-lichtraum.jpg" alt="" width="1536" height="1024" loading="lazy"></span>
+              <span class="price-room"><b>Lichtraum</b><em>Für Begegnung und Dialog.</em></span>
+              <span class="price-tag"><b>18 €</b><em>pro Stunde</em></span>
+            </li>
+            <li class="price-row" data-reveal>
+              <span class="price-thumb price-shape-three"><img src="assets/sofa-variante/images/room-stillraum.jpg" alt="" width="1619" height="972" loading="lazy"></span>
+              <span class="price-room"><b>Stillraum</b><em>Für Tiefe und innere Klarheit.</em></span>
+              <span class="price-tag"><b>15 €</b><em>pro Stunde</em></span>
+            </li>
+          </ul>
+        </div>
       </div>
+      <img class="price-sprig" src="assets/sofa-variante/graphics/eucalyptus-paper.png" alt="" width="1024" height="1536" loading="lazy">
       <p class="price-note">Platzhalter-Preise: Die Beträge sind noch nicht bestätigt und werden vor der Veröffentlichung ersetzt.</p>
     </section>
 
