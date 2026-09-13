@@ -37,6 +37,21 @@ if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: re
   $$('[data-reveal]').forEach((element) => element.classList.add('is-visible'));
 }
 
+const toTop = $('.to-top');
+
+if (toTop) {
+  const updateToTop = () => toTop.classList.toggle('visible', window.scrollY > window.innerHeight * 0.6);
+
+  updateToTop();
+  window.addEventListener('scroll', updateToTop, { passive: true });
+
+  toTop.addEventListener('click', () => {
+    const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' });
+    $('.wordmark')?.focus({ preventScroll: true });
+  });
+}
+
 const form = $('#request-form');
 const toast = $('.toast');
 let toastTimer;

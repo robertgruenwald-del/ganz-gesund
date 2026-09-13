@@ -15,10 +15,31 @@
 </head>
 <body>
   <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+  <!-- TODO Kontaktdaten: Adresse, E-Mail und Telefonnummer sind PLATZHALTER
+       und vor der Veröffentlichung durch die bestätigten Angaben zu ersetzen
+       (auch im Kontaktbereich und im Footer). -->
+  <div class="topbar">
+    <div class="topbar-inner">
+      <p class="topbar-item topbar-address">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+        <span>Straße Hausnummer, 1140 Wien</span>
+      </p>
+      <a class="topbar-item" href="mailto:kontakt@ganz-gesund.at">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="2.2"/><path d="m3.8 7 8.2 6 8.2-6"/></svg>
+        <span>kontakt@ganz-gesund.at</span>
+      </a>
+      <a class="topbar-item topbar-phone" href="tel:+430000000000">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.2 3.8h3l1.5 4-2.2 1.6a11.5 11.5 0 0 0 5.1 5.1l1.6-2.2 4 1.5v3a2 2 0 0 1-2.2 2A16.8 16.8 0 0 1 5.2 6 2 2 0 0 1 7.2 3.8Z"/></svg>
+        <span>+43 000 0000000</span>
+      </a>
+    </div>
+  </div>
+
   <header class="site-header" id="site-header">
     <a class="wordmark" href="#start" aria-label="Ganz gesund – Startseite">ganz gesund<span>.</span></a>
     <nav class="main-nav" id="main-nav" aria-label="Hauptnavigation">
-      <a href="#raeume">Räume</a><a href="#haus">Haus</a><a href="#garten">Garten</a><a href="#kontakt">Kontakt</a>
+      <a href="#raeume">Räume</a><a href="#haus">Haus</a><a href="#garten">Garten</a><a href="#preise">Preise</a><a href="#kontakt">Kontakt</a>
     </nav>
     <a class="button button-small header-cta" href="#raeume">Raum entdecken<span class="arrow" aria-hidden="true"></span></a>
     <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-nav"><span>Menü</span><i aria-hidden="true"></i></button>
@@ -79,6 +100,30 @@
       <img class="garden-collage" src="assets/sofa-variante/graphics/garden-collage.png" alt="" width="1152" height="1536"><p class="garden-note">Draußen<br>wirkt auch<br>innen.</p>
     </section>
 
+    <!-- TODO Preise: Die Stundensätze sind PLATZHALTER und vor der
+         Veröffentlichung durch die bestätigten Beträge zu ersetzen. -->
+    <section class="pricing" id="preise">
+      <div class="section-heading" data-reveal><h2>Was ein Raum kostet.</h2><p>Stundenweise buchbar – ohne Bindung, ohne versteckte Kosten.</p></div>
+      <div class="price-list">
+        <article class="price-card" data-reveal>
+          <h3>Weitraum</h3>
+          <p>Für Inspiration und Bewegung.</p>
+          <p class="price-amount"><b>22 €</b><span>pro Stunde</span></p>
+        </article>
+        <article class="price-card" data-reveal>
+          <h3>Lichtraum</h3>
+          <p>Für Begegnung und Dialog.</p>
+          <p class="price-amount"><b>18 €</b><span>pro Stunde</span></p>
+        </article>
+        <article class="price-card" data-reveal>
+          <h3>Stillraum</h3>
+          <p>Für Tiefe und innere Klarheit.</p>
+          <p class="price-amount"><b>15 €</b><span>pro Stunde</span></p>
+        </article>
+      </div>
+      <p class="price-note">Platzhalter-Preise: Die Beträge sind noch nicht bestätigt und werden vor der Veröffentlichung ersetzt.</p>
+    </section>
+
     <section class="process" id="ablauf">
       <p class="process-note">Einfach<br>und persönlich.</p>
       <div class="process-steps" data-reveal><span>Anfragen</span><span>Kennenlernen</span><span>Loslegen</span></div>
@@ -105,9 +150,12 @@
 
   <footer class="site-footer">
     <a class="wordmark" href="#start">ganz gesund<span>.</span></a><p>Praxisräume in Wien Penzing<br>Ein Ort für gute Arbeit.</p>
-    <nav aria-label="Navigation im Fußbereich"><a href="#raeume">Räume</a><a href="#haus">Haus</a><a href="#garten">Garten</a><a href="#kontakt">Kontakt</a></nav>
+    <nav aria-label="Navigation im Fußbereich"><a href="#raeume">Räume</a><a href="#haus">Haus</a><a href="#garten">Garten</a><a href="#preise">Preise</a><a href="#kontakt">Kontakt</a></nav>
     <p>In Wien. Für das, was wirkt.<br>© <span id="year">2026</span> Ganz gesund.</p>
   </footer>
+  <button class="to-top" type="button" aria-label="Zurück nach oben">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V6"/><path d="m6 11.5 6-6 6 6"/></svg>
+  </button>
   <div class="toast" role="status" aria-live="polite">Danke – der Entwurf wurde lokal geprüft, aber nicht versendet.</div>
   <script src="script.js"></script>
 </body>
